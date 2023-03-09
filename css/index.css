@@ -1,0 +1,172 @@
+/* menu superior */
+.menu-superior{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo-img:hover {
+    background-color: #fcfffe;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: #26503c   ;
+}
+
+.wrapper{
+    margin: 0 auto 0 150px;
+    width: 1000px;
+
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #849112;
+}
+
+
+ul {
+    margin-left: 0px;
+
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+}
+
+ul li a {
+    display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e1e1e;
+  padding: 0 20px;
+}
+
+ul li a:hover {
+    color:#1fb465;
+    background-color: #26503c;
+    border: black;
+    border-radius: 5px;
+    height: 70px;
+}
+
+
+/* carrusel */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contenCarrusel{
+    border: 5px solid black;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.carrusel{
+    border: 1px solid black;
+    height: 100%;
+    position: relative;
+}
+
+.img-carrusel{
+    height: 100%;
+}
+
+.flechas-carrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+#img-1{
+    background-color: #dbf10e;
+}
+
+#img-2{
+    background-color: #f50c0c;
+}
+
+#img-3{
+    background-color: #4e459e;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+i{
+    color: white;
+}
+
+#contenPuntos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contenPuntos > a i{
+    font-size: 1.5em;
+    font-style: nome;
+    color: #1fb465;
+}
+
+hr{
+    border-color: #1fb465;
+}
+
+#tabla{
+    margin: 20% 10px;
+    padding: 0
+}
+
+#tabla tr td p{
+    position: relative;
+    height: 20%;
+    width: 20%;
+    border: 4px solid #1fb465;
+    border-radius: 10px;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.vision{
+    margin: 0 100px;
+}
+
+#tabla tr td p:hover{
+    color: white;
+    box-shadow: 4px #1fb465;
+    border-radius: 20px;
+    font-size: xx-large;
+    height: 40%;
+    width: 40%;
+}
+
+.vision i:hover{
+    color: #1fb465;
+}
