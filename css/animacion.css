@@ -13,7 +13,7 @@
   width: 50%;
   height: 50%;
   background-color: red;
-  border: 1px solid black;
+  border: 1px solid rgb(12, 12, 12);
   /*transition: transform 1s ease-in-out 500ms;
     */
   animation: traslacion 4s ease-in-out infinite forwards alternate;
