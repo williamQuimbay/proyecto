@@ -5,28 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin system</title>
-    <!-- <link rel="stylesheet" href="../../css/index.css"/> -->
+    <link rel="stylesheet" href="../../css/paginas.css" />
   </head>
   <body>
-    <header class="menu-superior">
-        <div class="logo">
-            <img src="../../img/logo.png" alt="logo" class="logo-img">
-        </div>
-        <nav id="menu">
-            <div class="wrapper">
-              <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="limpieza.html">mantenimientos</a></li>
-                <li><a href="formateo.html">instalacion de sistemas operativo</a></li>
-                <li><a href="progrmas.html">programas</a></li>
-                <li><a href="tienda.html">tienda</a></li>
-                <li><a href="contacto.html">contactos</a></li>
-                <li><a href="acerca.html">acerca de</a></li>
-                <li><a href="login.html">inicio de sesion</a></li>
+    <div class="container">
+      <header>
+        <a href="index.html"><img src="../../img/logo.png" alt="logo" /></a>
+        <h1>ODIN-SYSTEM TIENDA DE TECNOLOGIA</h1>
+        <nav>
+          <ul>
+            <li class="activa"><a href="../index.html">Home</a></li>
+            <li><a href="limpieza.html">Mantenimientos</a></li>
+            <li>
+              <a href="formateo.html">Instalacion de sistemas operativo</a>
+            </li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contactenos</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="login.html">Inicio de sesion</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="menu">
+          <h3>Menu Principal</h3>
+          <nav class="vertical-menu">
+            <ul>
+              <a href="../index.html" class="active"
+                ><i class="fa fa-home"> </i> Inicio</a
+              >
+              <a href="limpieza.html">Mantenimientos</a>
+              <a href="formateo.html">Instalacion de sistemas operativo</a>
+              <a href="progrmas.html">Tienda</a>
+              <a href="contacto.html">Contactos</a>
+              <a href="acerca.html">Acerca de nosostros</a>
+              <a href="login.html">Inicio de sesion</a>
             </ul>
-            </div>
-            </nav>
+          </nav>
         </div>
-    </header>
+      </main>
+      <nav>
+          <h2>
+            formulario de solicitudes
+          </h2>
+          <br><br>
+          <form action="#" method="get">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              tabindex="1"
+              size="50"
+              maxlength="45"
+              required
+            />
+            <br />
+            <label for="telefono">Telefono</label>
+            <input
+              type="number"
+              name="telefono"
+              id="telefono"
+              required
+            />
+            <br />
+            <label for="correo">Correo</label>
+            <input
+              type="email"
+              name="correo"
+              id="correo"
+              required
+            />
+            <br />
+            <label for="fechanac">Fecha</label>
+            <input type="date" name="fechanac" id="fechanac" required />
+            <br />
+            <label for="descripcion">Solicitud</label>
+            <br />
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Enviar" />
+          </form>
+      </nav>
+      <footer>
+        <p>
+          Direccion calle siempre viva # 49 55 bogota D.c - Telefono 3102523745
+        </p>
+        <p>Siguenos en Facebook como Odin-System y en Instagram @Odin-System</p>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 16px;
+    background: #152747;
+    margin-top: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "header      header     header"
+      "tabla-1     tabla-2    main"
+      "footer      footer     footer";
+  }
+
+  .container header{
+    grid-area: header;
+  }
+  .container main{
+    grid-area: main;
+  }
+  .container .tabla-1{
+    grid-area: tabla-1;
+  }
+  .container .tabla-2{
+    grid-area: tabla-2;
+  }
+  .container footer{
+    grid-area: footer;
+  }
+   
+  .contenedor {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    min-height: 1000px;
+    max-height: 1000px;
+  }
+  
+  header {
+    background-color: #1e2b63;
+    border: 2px solid #1e2b63;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+  }
+  
+  header img {
+    width: 10%;
+    min-width: 100px;
+    background-color: #ccc;
+    border: 2px solid #000;
+    border-radius: 5px;
+  }
+  
+  header h1 {
+    margin-left: 20px;
+    color: #c6d3ff;
+  }
+  
+  header img,
+  header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+  }
+  
+  /* Menu horizontal*/
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7e94f5;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover:not(.activa) {
+    background-color: #22207a;
+  }
+  
+  nav .activa {
+    background-color: #152747;
+  }
+  
+  /* menu vertical*/
+
+  .vertical-menu {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+  }
+  
+  .vertical-menu a {
+    background-color: #7e94f5;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgb(104, 102, 221);
+    color: rgb(255, 255, 255);
+  }
+  
+  .vertical-menu a.active {
+    background-color: #20355a;
+    color: white;
+  }
+  
+  .menu h3 {
+    font-size: 25px;
+    color: #ccc;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .menu {
+    float: right;
+    width: 15%;
+    min-width: 200px;
+    min-height: 740px;
+    background: #546cd8;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+  }
+
+ /* tabla*/
+
+ table{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #546cd8;
+    background-color: #22207a;
+ }
+ table th{
+    border: 2px solid #20355a;
+    background-color: #546cd8;
+    margin: 15px;
+    padding: 15px;
+    color: #ccc;
+ }
+ table td{
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    text-align: center;
+    color: rgb(196, 184, 184);
+}
+table td:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    box-shadow: 4px 2px rgb(0, 0, 0);
+    color: #000;
+    background-color: #546cd8;
+}
+
+
+  footer {
+    width: 100%;
+    float: center;
+    background: #7e94f5;
+    /* min-height: 50px; */
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /*resposiv*/
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      font-size: 15px;
+      grid-template-areas:
+        "header      header"
+        "main        main"
+        "tabla-1     tabla-1"
+        "tabla-2     tabla-2"
+        "footer      footer";
+    }
+  
+    nav img {
+      height: 200px;
+    }
+    header h1 {
+      font-size: 15px;
+    }
+  
+    .menu {
+      min-height: 400px;
+    }
+    table td{
+        font-size: 15px
+    };
+  }
