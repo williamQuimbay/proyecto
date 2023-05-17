@@ -18,83 +18,52 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="limpieza.html">mantenimientos</a></li>
             <li><a href="formateo.html">instalacion de sistemas</a></li>
-            <li><a href="progrmas.html">programas</a></li>
             <li><a href="tienda.html">tienda</a></li>
             <li><a href="contacto.html">contactos</a></li>
             <li><a href="acerca.html">acerca de</a></li>
-            <li><a href="login.html">inicio de sesion</a></li>
+            <!-- <li><a href="login.html">inicio de sesion</a></li> -->
           </ul>
         </div>
       </nav>
     </header>
-    <header>
-      <!-- formulario -->
-      <link rel="stylesheet" href="../../css/login.css" />
-      <div class="container">
-        <h3>Registrate</h3>
-        <div class="buttons">
-          <!--boton registro google-->
-          <button class="google-btn">
-            <picture>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/480px-Google_%22G%22_Logo.svg.png"
-                alt="google-logo" width="15%"
-              />
-            </picture>
-            <span>Regitrarse con google</span>
-          </button>
 
-          <!--boton twitter -->
-          <button class="twitter-btn">
-            <picture>
-              <img src="../../img/twitter.png" alt="logo-twitter" width="15%" />
-            </picture>
-            <span> Registrate con twitter</span>
-          </button>
-        </div>
-
-        <!--separador-->
-        <div class="separator">
-          <hr />
-          <span></span>
-          <hr />
-        </div>
-
-        <form action="" method="">
-          <div class="seccition-input">
-            <label for="name">
-              <span>Name</span>
-              <input id="name" name="name" />
-            </label>
-            <label for="username">
-              <span>Username</span>
-              <input id="username" name="username" />
-            </label>
+    <!-- formulario -->
+    <link rel="stylesheet" href="../../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <div class="container">
+      <div class="form-content">
+        <h1 id="title">Registro</h1>
+        <form>
+          <div class="input-group">
+            <div class="input-field" id="nameInput">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Nombre" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="correo" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="contraseña" />
+            </div>
+            <br />
+            <p>olvidaste tu contaseña <a href="#">click aqui</a></p>
           </div>
-
-          <label for="email">
-            <span>Email</span>
-            <input id="email" name="email" />
-          </label>
-
-          <label for="password">
-            <span>Password</span>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="6+ caracteres"
-            />
-          </label>
-
-          <label for="checkbox" class="checkbox-label">
-            <input type="checkbox" />
-            <span>Acepto las condiciones y el aviso legal</span>
-          </label>
-
-          <button type="submit" class="sutmit-btn">Crear cuenta</button>
+          <div class="btn-field">
+            <br />
+            <button id="signUp" type="button">Registro</button>
+            <button id="signIn" type="button" class="disable">Login</button>
+          </div>
         </form>
       </div>
-    </header>
+    </div>
+    <script src="../../js/formulario.js"></script>
   </body>
 </html>
